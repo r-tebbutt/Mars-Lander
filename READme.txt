@@ -21,8 +21,8 @@ vertical descent.
 The Euler and Verlet dynamics would create some discrepancies in trajectory, as Euler dynamics are less 
 accurate and add energy to the system, which is not the case for Verlet.
 
-Once the lander moved according to the computed laws of physics, an auto pilot was designed using some basic control
-theory to safely land the lander in vertical descent scenarios 1 and 5, which was done successfully.
+Once the lander moved according to the computed laws of physics, an auto pilot was designed using a basic proportional control system to safely land the lander in vertical descent scenarios 1 and 5, which was done successfully.
 The target was a linearly decreasing velocity once the auto pilot system was activated, and this was achieved 
 aslong as the velocity was sufficiently low at the activation altitude to make this feasible.
 
+The constants of proportionality Kh and Kp in the control system were calibrated by trial and error to the specific scenarios in the task.
